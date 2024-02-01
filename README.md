@@ -2,20 +2,25 @@
 
 ```Measure Progress per Day @ 01302024
 * Singly Linked Lists Operations
-  * Implement LinkedLists and constructor
+  * Implement LinkedList and constructor
   * Print 
   * Append
   * Implement Tester
+  * Remove Last element
+  * Remove first element
+  * Insert, remove nth
+  * get,set
+  * reverse
+  
   ```
 ```Next Item :
 
 Write Junit for each operation
 Setup Jenkins to run unit tests ? 
 Implement 
-* Remove Last element
-* Remove first element
-* Insert
-* traverse
+* traverseing techniques
+* Leetcode problems
+* move to doubly ll
 
 ```
 
