@@ -93,12 +93,22 @@ public class tester {
         ll.printList();
 
     }
+
+    public static void mid_finder (int value){
+        LinkedList ll = new LinkedList(value);
+        // ll.makeEmpty();
+        for(int i=1;i<6;i++){
+            ll.append(i);
+        }
+        System.out.println( "Middle Node: "+ ll.findMiddleNode().value);
+    }
     public static void main(String[] args) {
 
         //appendTester(1);
        // removeLastTester(1);
        // ll_ops_tester(1000);
-        reverse_tester(1);
+       // reverse_tester(1);
+        mid_finder(1);
 
     }
 }

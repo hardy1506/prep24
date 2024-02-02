@@ -11,16 +11,18 @@
   * Insert, remove nth
   * get,set
   * reverse
+  * 1st LeetCode problem solved which uses tortoise-hare algorithm for finding middle element.
+        * traverse using 2 pointers was done as part of this
+        
   
   ```
 ```Next Item :
 
-Write Junit for each operation
-Setup Jenkins to run unit tests ? 
-Implement 
-* traverseing techniques
-* Leetcode problems
 * move to doubly ll
+
+P3/P4
+
+* Write junits instead of tester with static functions
 
 ```
 

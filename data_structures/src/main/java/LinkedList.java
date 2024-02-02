@@ -257,60 +257,70 @@ public class LinkedList {
     }
 
 
+    // LL problem :
 
+    /**
+     *
+     LL: Find Middle Node ( ** Interview Question)
+     Implement a method called findMiddleNode that returns the middle node of the linked list.
+     If the list has an even number of nodes, the method should return the second middle node.
 
+     * Solution  :
 
+     Floyd's Tortoise and Hare algorithm, also known as the cycle detection algorithm or the "tortoise and hare" algorithm, is a popular algorithm used to detect cycles in a sequence of values or elements, particularly in linked lists. The algorithm is named after the idea of a tortoise (slow-moving) and a hare (fast-moving), reflecting the way two pointers traverse the sequence.
+     Here's a basic outline of how the algorithm works:
 
+     Initialization:
 
+     Start with two pointers, one moving slow (tortoise) and the other moving fast (hare), both initially at the beginning of the sequence.
+     Traverse the Sequence:
 
+     Move the tortoise one step at a time.
+     Move the hare two steps at a time.
+     Cycle Detection:
 
+     If there is no cycle, the hare will eventually reach the end of the sequence, and the algorithm terminates.
+     If there is a cycle, the hare will eventually catch up to the tortoise within the cycle. Once the hare catches the tortoise, it's an indication that there is a cycle.
+     Cycle Length Determination (Optional):
 
+     After detecting a cycle, the algorithm can be extended to find the length of the cycle.
+     This algorithm is efficient and has a time complexity of O(mu + lambda), where "mu" is the start of the cycle, and "lambda" is the length of the cycle. The algorithm is widely used in various applications, including cycle detection in linked lists and graph algorithms.
+     *
+     * NOTES :
+     * When hear reaches the end, the tortoise is at the middle element.
+     * we can add even/odd details by checking the length of LL and printing the correct item for covering fine-grained details or edge cases
+     * you can always say print ( tortoise.next.value ) if list size is even and you want to print the outer
+     * EXA :
+     *  if the linked list is 1 -> 2 -> 3 -> 4 -> 5 -> 6, the two middle nodes are 3 and 4. The function will return the node containing the value 4.
+     *
+     *
+     *
+     * @return
+     */
+    public Node findMiddleNode () {
 
+        Node tortoise=head;
+        Node hare=head;
 
+        while (hare != null && hare.next!=null) {
+             // System.out.println("T : "+ tortoise.value);
+             //System.out.println("H : "+ hare.value);
+             //   System.out.println("-----");
 
+            tortoise = tortoise.next; // move one step
+            hare = hare.next.next; // move two steps
 
+//TODO : solve more problems on cycle detection.
+/*
+            if (tortoise == hare) {
+                System.out.println("Cycle detected!");
+            }*/
 
+        }
 
+        return tortoise;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    }
 
 
 
